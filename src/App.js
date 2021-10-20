@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Navigation from './components/navbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "../src/styles/vendor/nucleo/css/nucleo.css";
+import "../src/styles/vendor/font-awesome/css/font-awesome.min.css";
+import "../src/styles/argon-design-system-react.css";
+import Greetings from './components/greeting';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div>
+      <Navigation></Navigation>
+      <Greetings></Greetings>
     </div>
   );
 }
