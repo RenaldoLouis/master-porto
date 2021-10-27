@@ -5,6 +5,8 @@ import "../src/styles/vendor/nucleo/css/nucleo.css";
 import "../src/styles/vendor/font-awesome/css/font-awesome.min.css";
 import "../src/styles/argon-design-system-react.css";
 import Greetings from './components/greeting';
+import Proficiency from './components/Proficiency';
+import Education from './components/Education';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
     <div>
       <Navigation></Navigation>
       <Greetings></Greetings>
+      <Proficiency></Proficiency>
+      <Education></Education>
     </div>
   );
 }
