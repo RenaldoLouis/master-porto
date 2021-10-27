@@ -3,7 +3,7 @@ import { greetings } from "../portfolio";
 
 import { Button, Container, Row, Col } from "reactstrap";
 
-// import GreetingLottie from "../components/DisplayLottie";
+import GreetingLottie from "./DisplayLottie.js";
 // import SocialLinks from "../components/SocialLinks";
 
 const Greetings = () => {
@@ -53,7 +53,7 @@ const Greetings = () => {
                                     </div>
                                 </Col>
                                 <Col lg="6">
-                                    {/* <GreetingLottie animationPath="/lottie/coding.json" /> */}
+                                    <GreetingLottie animationPath="/lottie/coding.json" />
                                 </Col>
                             </Row>
                         </div>
