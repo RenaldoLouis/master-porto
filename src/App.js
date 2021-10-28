@@ -7,6 +7,7 @@ import "../src/styles/argon-design-system-react.css";
 import Greetings from './components/greeting';
 import Proficiency from './components/Proficiency';
 import Education from './components/Education';
+import Experience from './components/Experience';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Greetings></Greetings>
       <Proficiency></Proficiency>
       <Education></Education>
+      <Experience></Experience>
     </div>
   );
 }
