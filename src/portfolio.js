@@ -1,25 +1,24 @@
 // import emoji from "react-easy-emoji";
 
 export const greetings = {
-	name: "Hanzla Tauqeer",
-	title: "Hi all, I'm Hanzla",
+	name: "Fernando Renaldo Louis",
+	title: "Greetings, I'm Fernando Renaldo Louis",
 	description:
 		"A passionate Full Stack Web Developer and Mobile App Developer having an experience of building Web applications with JavaScript / Reactjs / Nodejs / Python / Django / Flask and some other cool libraries and frameworks and Cross Platform Mobile Apps With Flutter.",
 	resumeLink: "https://cv.hanzla.ga",
 };
 
 export const openSource = {
-	githubUserName: "1hanzla100",
+	githubUserName: "RenaldoLouis",
 };
 
 export const contact = {};
 
 export const socialLinks = {
-	facebook: "https://www.facebook.com/1hanzla100",
-	instagram: "https://www.instagram.com/1hanzla100",
-	twitter: "https://twitter.com/1hanzla100",
-	github: "https://github.com/1hanzla100",
-	linkedin: "https://www.linkedin.com/in/hanzla-tauqeer-0869281ba/",
+	instagram: "https://www.instagram.com/renaldo_louis",
+	github: "https://github.com/RenaldoLouis",
+	twitter: "https://twitter.com/RenaldoLouis5",
+	linkedin: "https://www.linkedin.com/in/renaldo-louis-8a2a3017b/",
 };
 
 export const skillsSection = {
@@ -126,18 +125,18 @@ export const SkillBars = [
 ];
 
 export const educationInfo = [
+	// {
+	// 	schoolName: "SMA DEK",
+	// 	subHeader: "Penjurusan IPA",
+	// 	duration: "September 2017 - April 2019",
+	// 	desc: "Participated in the research of XXX and published 3 papers.",
+	// 	descBullets: [
+	// 		"Lorem ipsum dolor sit amet, consectetur adipdfgiscing elit",
+	// 		"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+	// 	],
+	// },
 	{
-		schoolName: "Harvard University",
-		subHeader: "Master of Science in Computer Science",
-		duration: "September 2017 - April 2019",
-		desc: "Participated in the research of XXX and published 3 papers.",
-		descBullets: [
-			"Lorem ipsum dolor sit amet, consectetur adipdfgiscing elit",
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-		],
-	},
-	{
-		schoolName: "Harvard",
+		schoolName: "Unieversitas Multimedia Nusantara",
 		subHeader: "Master of Science in Computer Science",
 		duration: "September 2017 - April 2019",
 		desc: "Participated in the research of XXX and published 3 papers.",
@@ -147,9 +146,9 @@ export const educationInfo = [
 		],
 	},
 	{
-		schoolName: "Stanford University",
+		schoolName: "Udemy",
 		subHeader: "Bachelor of Science in Computer Science",
-		duration: "September 2013 - April 2017",
+		duration: "",
 		desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
 		descBullets: [
 			"Lorem ipsum dolorfdg sit amet, consectetur adipiscing elit",
@@ -208,7 +207,7 @@ export const feedbacks = [
 	{
 		name: "Hassan Mehmood",
 		feedback:
-			"We have been very happy with our new website! It looks professional and very easy to navigate. Our experience with the customer service at Hanzla tauqeer has been great. They handle things very efficiently and are available for any questions we have. They also keep us updated on daily reports so we know how our site is doing. I would recommend that u have choose hanzla web developer services for u.",
+			"We have been very happy with our new website! It looks professional and very easy to navigate. Our experience with the customer service at Hanzla tauqeer has been great. They handle things very efficiently and are available for any questions we have. They also keep us updated on daily reports so we know how our site is doing. I would recommend that u have choose FRL web developer services for u.",
 	},
 	{
 		name: "Maheen Altaf",
