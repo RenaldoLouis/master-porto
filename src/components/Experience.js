@@ -2,6 +2,7 @@ import React from "react";
 import { experience } from "../portfolio";
 import { Container, Row } from "reactstrap";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 import { Fade } from "react-reveal";
 import Badge from "react-bootstrap/Badge";
 import ExperienceCard from "../components/ExperienceCard";
@@ -62,7 +63,7 @@ const Experience = (data) => {
         );
     });
     return (
-        <section className="section section-lg">
+        <section className="section section-lg background-color-blue">
             <Container>
                 <Fade bottom duration={1000} distance="40px">
                     <div className="d-flex p-4">
