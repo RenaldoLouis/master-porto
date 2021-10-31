@@ -32,7 +32,7 @@ const Experience = (data) => {
         });
         return (
             <VerticalTimelineElement
-                className="vertical-timeline-element--work"
+                className="vertical-timeline-element"
                 date={work.years}
                 iconStyle={{
                     background: "#AE944F",
@@ -90,7 +90,7 @@ const Experience = (data) => {
                                     </h1>
                                 </div>
                             </div> */}
-                            <div className="col-md-8 mx-auto">
+                            <div className="col-md-12 mx-auto">
                                 <VerticalTimeline>
                                     {work}
                                     <VerticalTimelineElement
@@ -100,7 +100,7 @@ const Experience = (data) => {
                                             textAlign: "center",
                                         }}
                                         icon={
-                                            <i className="fas fa-hourglass-start mx-auto experience-icon"></i>
+                                            <i className="fas fa-hourglass-start mx-auto experience-icon experience-icon"></i>
                                         }
                                     />
                                 </VerticalTimeline>

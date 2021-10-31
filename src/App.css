@@ -6,6 +6,24 @@
   background:  linear-gradient(35deg, #11cdef 0, #1171ef 100%) !important
 }
 
+.experience-icon{
+  font-size: 200% !important;
+}
+
+
+/* .vertical-timeline-element-date {
+  font-size: 0.8rem !important;
+  margin-right: 0.5rem !important;
+  color: rgb(0 0 0) !important;
+} */
+
+.vertical-timeline-element-date {
+	padding: 0 !important;
+	margin: 0px !important;
+  color: rgb(0 0 0) !important;
+  font-size: 0.8rem !important;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
