@@ -8,6 +8,7 @@ import Greetings from './components/greeting';
 import Proficiency from './components/Proficiency';
 import Education from './components/Education';
 import Experience from './components/Experience';
+import Footer from './components/Footer';
 
 function App() {
   const resumeExperience = [
@@ -68,6 +69,7 @@ function App() {
         resumeExperience={resumeExperience}
         resumeBasicInfo={basicInfo}
       />
+      <Footer></Footer>
     </div>
   );
 }

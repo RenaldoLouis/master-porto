@@ -80,7 +80,7 @@ const Experience = (data) => {
                         {/* {experience.map((data, i) => {
                         return <ExperienceCard key={i} data={data} />;
                     })} */}
-                        <section id="resume" className="pb-5">
+                        <section id="resume">
                             {/* <div className="col-md-12 mx-auto">
                                 <div className="col-md-12">
                                     <h1 className="section-title" style={{ color: "black" }}>
