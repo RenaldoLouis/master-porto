@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Navigation from './components/navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../src/styles/vendor/nucleo/css/nucleo.css";
@@ -9,6 +9,8 @@ import Proficiency from './components/Proficiency';
 import Education from './components/Education';
 import Experience from './components/Experience';
 import Footer from './components/Footer';
+import Menu from './components/Menu';
+import { useState } from 'react';
 
 function App() {
   const resumeExperience = [
@@ -58,9 +60,12 @@ function App() {
       "experience": "Experience"
     }
   }
+  const [menuOpen, setMenuOpen] = useState(false)
+
   return (
     <div>
-      <Navigation></Navigation>
+      <Navigation menuOpen={menuOpen} setMenuOpen={setMenuOpen}></Navigation>
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Greetings></Greetings>
       <Proficiency></Proficiency>
       <Education></Education>

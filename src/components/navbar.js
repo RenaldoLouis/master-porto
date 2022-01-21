@@ -13,10 +13,13 @@ import {
     Nav,
     Container,
     Row,
-    Col,
+    Col
 } from "reactstrap";
 
-const Navigation = () => {
+function Navigation({
+    menuOpen,
+    setMenuOpen
+}) {
     const [collapseClasses, setCollapseClasses] = useState("");
     const onExiting = () => setCollapseClasses("collapsing-out");
 
@@ -81,7 +84,7 @@ const Navigation = () => {
                                 className="align-items-lg-center ml-lg-auto"
                                 navbar
                             >
-                                <NavItem>
+                                {/* <NavItem>
                                     <NavLink
                                         rel="noopener"
                                         aria-label="Facebook"
@@ -94,7 +97,7 @@ const Navigation = () => {
                                             Facebook
                                         </span>
                                     </NavLink>
-                                </NavItem>
+                                </NavItem> */}
                                 <NavItem>
                                     <NavLink
                                         rel="noopener"
@@ -152,7 +155,16 @@ const Navigation = () => {
                                     </NavLink>
                                 </NavItem>
                             </Nav>
+                            <div className="textBlue">asdasdsad</div>
+                            <div className="right">
+                                <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+                                    <span className="line1"></span>
+                                    <span className="line2"></span>
+                                    <span className="line3"></span>
+                                </div>
+                            </div>
                         </UncontrolledCollapse>
+
                     </Container>
                 </Navbar>
             </header>
