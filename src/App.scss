@@ -130,30 +130,13 @@ $mainColor: #15023a;
 
 /* Menu CSS */
 
-.hamburger {
-  width: 32px;
-  height: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-
-  span {
-    width: 100%;
-    height: 3px;
-    background-color: black;
-    transform-origin: left;
-    transition: all 2s ease;
-  }
-}
-
 // Topbar Css
 .topbar {
-  width: 100%;
-  height: 70px;
-  background-color: white;
+  // width: 100%;
+  // height: 70px;
+  // background-color: white;
   color: #15023a;
-  position: fixed;
+  // position: fixed;
   top: 0;
   z-index: 3;
   transition: all 1s ease;
@@ -218,7 +201,7 @@ $mainColor: #15023a;
   }
 
   &.active {
-    background-color: $mainColor;
+    // background-color: $mainColor;
     color: white;
 
     .hamburger {

@@ -155,12 +155,15 @@ function Navigation({
                                     </NavLink>
                                 </NavItem>
                             </Nav>
-                            <div className="textBlue">asdasdsad</div>
-                            <div className="right">
-                                <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-                                    <span className="line1"></span>
-                                    <span className="line2"></span>
-                                    <span className="line3"></span>
+                            <div className={"topbar " + (menuOpen && "active")}>
+                                <div className="wrapper">
+                                    <div className="right">
+                                        <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+                                            <span className="line1"></span>
+                                            <span className="line2"></span>
+                                            <span className="line3"></span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </UncontrolledCollapse>
