@@ -8,9 +8,9 @@ import Badge from "react-bootstrap/Badge";
 import ExperienceCard from "../components/ExperienceCard";
 
 const Experience = (data) => {
-    console.log(data);
-    console.log(data.resumeExperience);
-    console.log(data.resumeBasicInfo);
+    // console.log(data);
+    // console.log(data.resumeExperience);
+    // console.log(data.resumeBasicInfo);
     let sectionName = data.resumeBasicInfo.section_name.experience
     var work = data.resumeExperience.map(function (work, i) {
         const technologies = work.technologies;

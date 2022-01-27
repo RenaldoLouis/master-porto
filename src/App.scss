@@ -11,19 +11,19 @@ $mainColor: #15023a;
   text-align: center;
 }
 
-.background-color-blue{
-  background:  linear-gradient(35deg, #11cdef 0, #1171ef 100%) !important
+.background-color-blue {
+  background: linear-gradient(35deg, #11cdef 0, #1171ef 100%) !important
 }
 
-.experience-icon{
+.experience-icon {
   font-size: 200% !important;
 }
 
-.vertical-timeline::before{
+.vertical-timeline::before {
   top: -20px !important;
 }
 
-.vertical-timeline-element{
+.vertical-timeline-element {
   /* margin: 0px !important; */
 }
 
@@ -34,8 +34,8 @@ $mainColor: #15023a;
 } */
 
 .vertical-timeline-element-date {
-	padding: 0 !important;
-	margin: 0px !important;
+  padding: 0 !important;
+  margin: 0px !important;
   color: rgb(0 0 0) !important;
   font-size: 0.8rem !important;
 }
@@ -46,9 +46,13 @@ $mainColor: #15023a;
 }
 
 .experience-icon {
-	font-size: 300%;
-	margin-top: 25%;
-	text-align: center;
+  font-size: 300%;
+  margin-top: 25%;
+  text-align: center;
+
+  @media screen and (max-width:1169px) {
+    margin-top: 10%;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -76,13 +80,14 @@ $mainColor: #15023a;
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.textBlue{
-  color:blue;
+.textBlue {
+  color: blue;
 }
 
 /* Menu CSS */
@@ -115,6 +120,7 @@ $mainColor: #15023a;
 
     li {
       margin-bottom: 25px;
+
       a {
         font-size: inherit;
         color: inherit;
@@ -164,7 +170,7 @@ $mainColor: #15023a;
         align-items: center;
         margin-left: 30px;
 
-        @include mobile{
+        @include mobile {
           display: none;
         }
 
@@ -210,9 +216,11 @@ $mainColor: #15023a;
           background-color: white;
           transform: rotate(45deg);
         }
+
         &:nth-child(2) {
           opacity: 0;
         }
+
         &:last-child {
           background-color: white;
           transform: rotate(-45deg);
