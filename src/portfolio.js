@@ -5,7 +5,7 @@ export const greetings = {
 	title: "Greetings, I'm Fernando Renaldo Louis",
 	description:
 		"A passionate Full Stack Web Developer and Mobile App Developer having an experience of building Web applications with JavaScript / Reactjs / Nodejs / Python / Django / Flask and some other cool libraries and frameworks and Cross Platform Mobile Apps With Flutter.",
-	resumeLink: "https://cv.hanzla.ga",
+	resumeLink: "https://drive.google.com/file/d/1sn3Nn93Kdo3loDyuQNH76cGdkNJLZO0s/view?usp=sharing",
 };
 
 export const openSource = {

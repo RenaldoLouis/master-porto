@@ -1,11 +1,16 @@
-import React from "react";
-
+import React, { useState } from "react";
 import { Card, Col, Row, Container } from "reactstrap";
 
 // import SocialLinks from "../components/SocialLinks";
 // import Image from "next/image";
 
 const Footer = () => {
+    const [message, setMessage] = useState(false);
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setMessage(true);
+    };
     return (
         <Card className="section-lg bg-gradient-info shadow-lg border-0">
             <Container className="">
@@ -29,6 +34,21 @@ const Footer = () => {
                             <div className="my-3 icon-shape bg-gradient-white shadow rounded text-info">
                                 <i className="ni ni-pin-3 text-info mr-2" />
                                 "Tangerang, Indonesia"
+                            </div>
+                            <div className="contact" id="contact">
+                                <div className="right">
+                                    <h2 style={{ color: "#fff" }}>Contact.</h2>
+                                    <form action="mailto:renaldolouis555@gmail.com"
+                                        method="POST"
+                                        enctype="text/plain"
+                                        name="EmailForm"
+                                        style={{ display: "grid" }}
+                                    >
+                                        <input style={{ marginBottom: "10px" }} type="text" placeholder="Email" name="Email" />
+                                        <textarea style={{ marginBottom: "10px" }} type="text" placeholder="Message" name="Message"></textarea>
+                                        <button type="submit" value="Send">Send</button>
+                                    </form>
+                                </div>
                             </div>
                         </Col>
                     </Row>
