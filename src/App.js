@@ -10,7 +10,7 @@ import Education from './components/Education';
 import Experience from './components/Experience';
 import Footer from './components/Footer';
 import Menu from './components/Menu';
-import { useState } from 'react';
+import {useState} from 'react';
 
 function App() {
   const resumeExperience = [
@@ -69,7 +69,6 @@ function App() {
       <Greetings></Greetings>
       <Proficiency></Proficiency>
       <Education></Education>
-      {/* <Experience></Experience> */}
       <Experience
         resumeExperience={resumeExperience}
         resumeBasicInfo={basicInfo}

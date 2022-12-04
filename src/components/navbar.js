@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
 // import { Link } from "react-router-dom";
 
-import { greetings, socialLinks } from "../portfolio.js";
+import {greetings, socialLinks} from "../portfolio.js";
 // import Headroom from "headroom.js";
 // import Link from "next/link";
 import {
@@ -21,6 +21,7 @@ function Navigation({
     setMenuOpen
 }) {
     const [collapseClasses, setCollapseClasses] = useState("");
+    const [scrollValue, setScrollValue] = useState("");
     const onExiting = () => setCollapseClasses("collapsing-out");
 
     const onExited = () => setCollapseClasses("");
@@ -31,60 +32,74 @@ function Navigation({
     //     headroom.init();
     // });
 
+    var lastScrollTop = 0;
+
+    // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+    document.addEventListener("scroll", function () { // or window.addEventListener("scroll"....
+        var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+        if (st > lastScrollTop) {
+            // downscroll code
+            setScrollValue(st)
+        } else {
+            // upscroll code
+            setScrollValue(st)
+        }
+        lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+    }, false);
+
     return (
-        <>
-            <header className="header-global">
-                <Navbar
-                    className="navbar-main navbar-transparent navbar-light headroom"
-                    expand="lg"
-                    id="navbar-main"
+        <Navbar
+            className="navbar-main navbar-transparent navbar-light headroom"
+            expand="lg"
+            id="navbar-main"
+            style={{position: "fixed", backgroundColor: scrollValue > 0 ? "#FFB042" : null}}
+        >
+            <Container>
+                <NavbarBrand href="/" className="mr-lg-5">
+                    <h2 className="text-white" id="nav-title">
+                        Renaldo
+                    </h2>
+                </NavbarBrand>
+                <button
+                    className="navbar-toggler"
+                    aria-label="navbar_toggle"
+                    id="navbar_global"
                 >
-                    <Container>
-                        <NavbarBrand href="/" className="mr-lg-5">
-                            <h2 className="text-white" id="nav-title">
-                                {greetings.name}
-                            </h2>
-                        </NavbarBrand>
-                        <button
-                            className="navbar-toggler"
-                            aria-label="navbar_toggle"
-                            id="navbar_global"
-                        >
-                            <span className="navbar-toggler-icon" />
-                        </button>
-                        <UncontrolledCollapse
-                            toggler="#navbar_global"
-                            navbar
-                            className={collapseClasses}
-                            onExiting={onExiting}
-                            onExited={onExited}
-                        >
-                            <div className="navbar-collapse-header">
-                                <Row>
-                                    <Col className="collapse-brand" xs="10">
-                                        <h3
-                                            className="text-black"
-                                            id="nav-title"
-                                        >
-                                            {greetings.name}
-                                        </h3>
-                                    </Col>
-                                    <Col className="collapse-close" xs="2">
-                                        <button
-                                            className="navbar-toggler"
-                                            id="navbar_global"
-                                        >
-                                            <span />
-                                            <span />
-                                        </button>
-                                    </Col>
-                                </Row>
-                            </div>
-                            <Nav
-                                className="align-items-lg-center ml-lg-auto"
-                                navbar
-                            >
-                                {/* <NavItem>
+                    <span className="navbar-toggler-icon" />
+                </button>
+                <UncontrolledCollapse
+                    toggler="#navbar_global"
+                    navbar
+                    className={collapseClasses}
+                    onExiting={onExiting}
+                    onExited={onExited}
+                >
+                    <div className="navbar-collapse-header">
+                        <Row>
+                            <Col className="collapse-brand" xs="10">
+                                <h3
+                                    className="text-black"
+                                    id="nav-title"
+                                >
+                                    Renaldo
+                                </h3>
+                            </Col>
+                            <Col className="collapse-close" xs="2">
+                                <button
+                                    className="navbar-toggler"
+                                    id="navbar_global"
+                                >
+                                    <span />
+                                    <span />
+                                </button>
+                            </Col>
+                        </Row>
+                    </div>
+                    <Nav
+                        className="align-items-lg-center ml-lg-auto"
+                        navbar
+                    >
+                        {/* <NavItem>
                                     <NavLink
                                         rel="noopener"
                                         aria-label="Facebook"
@@ -98,64 +113,64 @@ function Navigation({
                                         </span>
                                     </NavLink>
                                 </NavItem> */}
-                                <NavItem>
-                                    <NavLink
-                                        rel="noopener"
-                                        aria-label="Instagram"
-                                        className="nav-link-icon"
-                                        href={socialLinks.instagram}
-                                        target="_blank"
-                                    >
-                                        <i className="fa fa-instagram" />
-                                        <span className="nav-link-inner--text d-lg-none ml-2">
-                                            Instagram
-                                        </span>
-                                    </NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink
-                                        rel="noopener"
-                                        aria-label="Twitter"
-                                        className="nav-link-icon"
-                                        href={socialLinks.twitter}
-                                        target="_blank"
-                                    >
-                                        <i className="fa fa-twitter-square" />
-                                        <span className="nav-link-inner--text d-lg-none ml-2">
-                                            Twitter
-                                        </span>
-                                    </NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink
-                                        rel="noopener"
-                                        aria-label="Github"
-                                        className="nav-link-icon"
-                                        href={socialLinks.github}
-                                        target="_blank"
-                                    >
-                                        <i className="fa fa-github" />
-                                        <span className="nav-link-inner--text d-lg-none ml-2">
-                                            Github
-                                        </span>
-                                    </NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink
-                                        rel="noopener"
-                                        aria-label="Linkedin"
-                                        className="nav-link-icon"
-                                        href={socialLinks.linkedin}
-                                        target="_blank"
-                                    >
-                                        <i className="fa fa-linkedin" />
-                                        <span className="nav-link-inner--text d-lg-none ml-2">
-                                            Linkedin
-                                        </span>
-                                    </NavLink>
-                                </NavItem>
-                            </Nav>
-                            <div className={"topbar " + (menuOpen && "active")}>
+                        <NavItem>
+                            <NavLink
+                                rel="noopener"
+                                aria-label="Instagram"
+                                className="nav-link-icon"
+                                href={socialLinks.instagram}
+                                target="_blank"
+                            >
+                                <i className="fa fa-instagram" />
+                                <span className="nav-link-inner--text d-lg-none ml-2">
+                                    Instagram
+                                </span>
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink
+                                rel="noopener"
+                                aria-label="Twitter"
+                                className="nav-link-icon"
+                                href={socialLinks.twitter}
+                                target="_blank"
+                            >
+                                <i className="fa fa-twitter-square" />
+                                <span className="nav-link-inner--text d-lg-none ml-2">
+                                    Twitter
+                                </span>
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink
+                                rel="noopener"
+                                aria-label="Github"
+                                className="nav-link-icon"
+                                href={socialLinks.github}
+                                target="_blank"
+                            >
+                                <i className="fa fa-github" />
+                                <span className="nav-link-inner--text d-lg-none ml-2">
+                                    Github
+                                </span>
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink
+                                rel="noopener"
+                                aria-label="Linkedin"
+                                className="nav-link-icon"
+                                href={socialLinks.linkedin}
+                                target="_blank"
+                            >
+                                <i className="fa fa-linkedin" />
+                                <span className="nav-link-inner--text d-lg-none ml-2">
+                                    Linkedin
+                                </span>
+                            </NavLink>
+                        </NavItem>
+                    </Nav>
+                    {/* <div className={"topbar " + (menuOpen && "active")}>
                                 <div className="wrapper">
                                     <div className="right">
                                         <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
@@ -165,13 +180,11 @@ function Navigation({
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </UncontrolledCollapse>
+                            </div> */}
+                </UncontrolledCollapse>
 
-                    </Container>
-                </Navbar>
-            </header>
-        </>
+            </Container>
+        </Navbar>
     );
 };
 

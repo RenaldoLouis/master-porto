@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Card, Col, Row, Container } from "reactstrap";
+import React, {useState} from "react";
+import {Card, Col, Row, Container} from "reactstrap";
 
 // import SocialLinks from "../components/SocialLinks";
 // import Image from "next/image";
@@ -18,8 +18,8 @@ const Footer = () => {
                     <Row className="">
                         <Col className="order-lg-2" lg="4">
                             <img
-                                src="https://upload.wikimedia.org/wikipedia/commons/8/80/Sarek_in_profile.jpg"
-                                style={{ width: "200px" }}
+                                src="./profile.jpeg"
+                                style={{width: "200px"}}
                                 alt=""
                                 className="rounded-circle img-center img-fluid shadow shadow-lg--hover mb-4"
                             />
@@ -37,15 +37,15 @@ const Footer = () => {
                             </div>
                             <div className="contact" id="contact">
                                 <div className="right">
-                                    <h2 style={{ color: "#fff" }}>Contact.</h2>
+                                    <h2 style={{color: "#fff"}}>Contact.</h2>
                                     <form action="mailto:renaldolouis555@gmail.com"
                                         method="POST"
                                         enctype="text/plain"
                                         name="EmailForm"
-                                        style={{ display: "grid" }}
+                                        style={{display: "grid"}}
                                     >
-                                        <input style={{ marginBottom: "10px" }} type="text" placeholder="Email" name="Email" />
-                                        <textarea style={{ marginBottom: "10px" }} type="text" placeholder="Message" name="Message"></textarea>
+                                        <input style={{marginBottom: "10px"}} type="text" placeholder="Email" name="Email" />
+                                        <textarea style={{marginBottom: "10px"}} type="text" placeholder="Message" name="Message"></textarea>
                                         <button type="submit" value="Send">Send</button>
                                     </form>
                                 </div>
