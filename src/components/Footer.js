@@ -38,7 +38,11 @@ const Footer = () => {
                             <div className="contact" id="contact">
                                 <div className="right">
                                     <h2 style={{color: "#fff"}}>Contact.</h2>
-                                    <form action="mailto:renaldolouis555@gmail.com"
+                                    {/* "mailto:manish@simplygraphix.com?subject=Feedback for 
+                                    webdevelopersnotes.com&body=The Tips and Tricks section is great
+                                    &cc=anotheremailaddress@anotherdomain.com
+                                    &bcc=onemore@anotherdomain.com" */}
+                                    <form action="mailto:renaldolouis555@gmail.com?subject=Customer Data"
                                         method="POST"
                                         enctype="text/plain"
                                         name="EmailForm"
