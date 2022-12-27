@@ -35,11 +35,11 @@ const Experience = (data) => {
                 className="vertical-timeline-element"
                 date={work.years}
                 iconStyle={{
-                    background: "#AE944F",
+                    background: "rgb(255, 176, 66)",
                     color: "#fff",
                     textAlign: "center",
                 }}
-                icon={<i className="fab fa-angular experience-icon"></i>}
+                icon={<i className="fab fa-react experience-icon"></i>}
                 key={i}
             >
                 <div style={{ textAlign: "left", marginBottom: "4px" }}>
@@ -95,7 +95,7 @@ const Experience = (data) => {
                                     {work}
                                     <VerticalTimelineElement
                                         iconStyle={{
-                                            background: "#AE944F",
+                                            background: "rgb(255, 176, 66)",
                                             color: "#fff",
                                             textAlign: "center",
                                         }}

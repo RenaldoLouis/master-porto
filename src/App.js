@@ -7,12 +7,15 @@ import "../src/styles/argon-design-system-react.css";
 import Greetings from './components/greeting';
 import Proficiency from './components/Proficiency';
 import Education from './components/Education';
+import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Footer from './components/Footer';
 import Menu from './components/Menu';
-import {useState} from 'react';
+import { useState } from 'react';
+import Projects from './components/Projects';
 
 function App() {
+
   const resumeExperience = [
     {
       "company": "DefOpenSource",
@@ -67,8 +70,10 @@ function App() {
       <Navigation menuOpen={menuOpen} setMenuOpen={setMenuOpen}></Navigation>
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Greetings></Greetings>
+      <Skills></Skills>
       <Proficiency></Proficiency>
       <Education></Education>
+      <Projects></Projects>
       <Experience
         resumeExperience={resumeExperience}
         resumeBasicInfo={basicInfo}
