@@ -4,7 +4,7 @@ export const greetings = {
 	name: "Fernando Renaldo Louis",
 	title: "Greetings, I'm Fernando Renaldo Louis",
 	description:
-		"A passionate Full Stack Web Developer and Mobile App Developer having an experience of building Web applications with JavaScript / Reactjs / Nodejs / Python / Django / Flask and some other cool libraries and frameworks and Cross Platform Mobile Apps With Flutter.",
+		"A Full Stack Web Developer and Mobile App Developer having an experience of building Web applications with JavaScript / Reactjs / React / Nodejs  / Golang / Flutter / Springboot and some other cool libraries and frameworks.",
 	resumeLink: "https://drive.google.com/file/d/1sn3Nn93Kdo3loDyuQNH76cGdkNJLZO0s/view?usp=sharing",
 };
 
@@ -24,18 +24,18 @@ export const socialLinks = {
 export const skillsSection = {
 	title: "What I do",
 	subTitle:
-		"CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+		"Curious Full Stack Developer Who Wants To Explore Every Tech Stack",
 	data: [
 		{
 			title: "Full Stack Development",
 			lottieAnimationFile: "/lottie/skills/fullstack.json", // Path of Lottie Animation JSON File
 			skills: [
 				emoji(
-					"⚡ Building responsive Single-Page-Apps (SPA) & PWA in React.js"
+					"⚡ Building responsive Single-Page-Apps (SPA) & PWA in React"
 				),
-				emoji("⚡ Building responsive static websites using Next.js"),
+				emoji("⚡ Building Awesome Mobile Application using Flutter"),
 				emoji(
-					"⚡ Building RESTful APIs in Django & Django REST Framework"
+					"⚡ Building RESTful APIs with Springboot and Docker"
 				),
 			],
 			softwareSkills: [
@@ -56,19 +56,6 @@ export const skillsSection = {
 					fontAwesomeClassname: "vscode-icons:file-type-reactjs",
 				},
 				{
-					skillName: "Nextjs",
-					fontAwesomeClassname: "vscode-icons:file-type-light-next",
-				},
-				{
-					skillName: "Python",
-					fontAwesomeClassname: "logos:python",
-				},
-				{
-					skillName: "Django",
-					fontAwesomeClassname: "vscode-icons:file-type-django",
-				},
-
-				{
 					skillName: "Redux",
 					fontAwesomeClassname: "logos:redux",
 				},
@@ -79,6 +66,10 @@ export const skillsSection = {
 				{
 					skillName: "Yarn",
 					fontAwesomeClassname: "logos:yarn",
+				},
+				{
+					skillName: "Flutter",
+					fontAwesomeClassname: "logos:flutter",
 				},
 			],
 		},
@@ -97,14 +88,6 @@ export const skillsSection = {
 			softwareSkills: [
 				// ? Check README To get icon details
 				{
-					skillName: "AWS",
-					fontAwesomeClassname: "logos:aws",
-				},
-				{
-					skillName: "Azure",
-					fontAwesomeClassname: "logos:microsoft-azure",
-				},
-				{
 					skillName: "Heroku",
 					fontAwesomeClassname: "logos:heroku-icon",
 				},
@@ -121,63 +104,8 @@ export const skillsSection = {
 					fontAwesomeClassname: "logos:docker-icon",
 				},
 				{
-					skillName: "Github Actions",
-					fontAwesomeClassname: "logos:github-actions",
-				},
-				{
-					skillName: "Cloudinary",
-					fontAwesomeClassname: "logos:cloudinary",
-				},
-				{
 					skillName: "Nginx",
 					fontAwesomeClassname: "logos:nginx",
-				},
-				{
-					skillName: "Sentry",
-					fontAwesomeClassname: "logos:sentry-icon",
-				},
-			],
-		},
-		{
-			title: "Blockchain",
-			lottieAnimationFile: "/lottie/skills/ethereum.json", // Path of Lottie Animation JSON File
-			skills: [
-				emoji(
-					"⚡ Experience in developing Smart Contract using Solidity & Ethereum"
-				),
-				emoji(
-					"⚡ Building Scripts for automated testing & deployment of Smart Contracts using Brownie & Infura"
-				),
-				emoji(
-					"⚡ Experience of using Openzeppelin Smart Contract Standards & Chainlink Oracles"
-				),
-				emoji(
-					"⚡ Developing NFT Smart Contracts using ERC-721 Token Standard"
-				),
-				emoji(
-					"⚡ Building Dapps with React.js & Solidity using Web3.js, Moralis & IPFS"
-				),
-			],
-			softwareSkills: [
-				{
-					skillName: "Ethereum",
-					fontAwesomeClassname: "logos:ethereum",
-				},
-				{
-					skillName: "Solidity",
-					fontAwesomeClassname: "logos:solidity",
-				},
-				{
-					skillName: "Web3js",
-					fontAwesomeClassname: "logos:web3js",
-				},
-				{
-					skillName: "Metamask",
-					fontAwesomeClassname: "logos:metamask-icon",
-				},
-				{
-					skillName: "Ganache",
-					fontAwesomeClassname: "logos:ganache-icon",
 				},
 			],
 		},
@@ -186,48 +114,24 @@ export const skillsSection = {
 
 export const SkillBars = [
 	{
-		Stack: "Frontend/Design", //Insert stack or technology you have experience in
-		progressPercentage: "90", //Insert relative proficiency in percentage
+		Stack: "Problem Solving",
+		progressPercentage: "85",
 	},
 	{
-		Stack: "Backend",
+		Stack: "Leadership",
 		progressPercentage: "70",
 	},
 	{
-		Stack: "Programming",
-		progressPercentage: "60",
+		Stack: "Teamwork",
+		progressPercentage: "90",
 	},
 ];
 
 export const educationInfo = [
-	// {
-	// 	schoolName: "SMA DEK",
-	// 	subHeader: "Penjurusan IPA",
-	// 	duration: "September 2017 - April 2019",
-	// 	desc: "Participated in the research of XXX and published 3 papers.",
-	// 	descBullets: [
-	// 		"Lorem ipsum dolor sit amet, consectetur adipdfgiscing elit",
-	// 		"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-	// 	],
-	// },
 	{
-		schoolName: "Unieversitas Multimedia Nusantara",
+		schoolName: "Universitas Multimedia Nusantara",
 		subHeader: "Master of Science in Computer Science",
-		duration: "September 2017 - April 2019",
-		desc: "Participated in the research of XXX and published 3 papers.",
-		descBullets: [
-			"Lorem ipsum dolor sit amet, consectetfgur adipiscing elit",
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-		],
-	},
-	{
-		schoolName: "Udemy",
-		subHeader: "Bachelor of Science in Computer Science",
-		duration: "",
-		desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-		descBullets: [
-			"Lorem ipsum dolorfdg sit amet, consectetur adipiscing elit",
-		],
+		duration: "September 2017 - August 2021",
 	},
 ];
 
@@ -261,20 +165,22 @@ export const experience = [
 
 export const projects = [
 	{
-		name: "lorem ipsum",
-		desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-		link: "https://example.com",
+		name: "Jumlaty",
+		desc: "Application to help grocery shopping in saudi arabia",
+		link: "https://play.google.com/store/apps/details?id=com.jumlaty.customer&hl=en_US&gl=US&pli=1",
 	},
 	{
-		name: "lorem ipsum",
-		desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-		github: "https://github.com/1hanzla100",
+		name: "Hisabi",
+		desc: "App to help record and track store inventory",
+		link: "https://play.google.com/store/apps/details?id=com.hisabi",
 	},
 	{
-		name: "lorem ipsum",
-		desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-		github: "https://github.com/1hanzla100",
-		link: "https://example.com",
+		name: "Masareefy",
+		desc: "Apps to help company to track their expenses",
+	},
+	{
+		name: "Alphaverse",
+		desc: "Ethereum Wallet Apps to trade NFT",
 	},
 ];
 

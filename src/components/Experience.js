@@ -1,9 +1,9 @@
 import React from "react";
-import { experience } from "../portfolio";
-import { Container, Row } from "reactstrap";
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import {experience} from "../portfolio";
+import {Container, Row} from "reactstrap";
+import {VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { Fade } from "react-reveal";
+import {Fade} from "react-reveal";
 import Badge from "react-bootstrap/Badge";
 import ExperienceCard from "../components/ExperienceCard";
 
@@ -42,23 +42,23 @@ const Experience = (data) => {
                 icon={<i className="fab fa-react experience-icon"></i>}
                 key={i}
             >
-                <div style={{ textAlign: "left", marginBottom: "4px" }}>
+                <div style={{textAlign: "left", marginBottom: "4px"}}>
                     {mainTech}
                 </div>
 
                 <h3
                     className="vertical-timeline-element-title"
-                    style={{ textAlign: "left" }}
+                    style={{textAlign: "left"}}
                 >
                     {work.title}
                 </h3>
                 <h4
                     className="vertical-timeline-element-subtitle"
-                    style={{ textAlign: "left" }}
+                    style={{textAlign: "left"}}
                 >
                     {work.company}
                 </h4>
-                <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
+                <div style={{textAlign: "left", marginTop: "15px"}}>{tech}</div>
             </VerticalTimelineElement>
         );
     });

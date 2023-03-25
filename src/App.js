@@ -11,46 +11,57 @@ import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Footer from './components/Footer';
 import Menu from './components/Menu';
-import { useState } from 'react';
+import {useState} from 'react';
 import Projects from './components/Projects';
 
 function App() {
 
   const resumeExperience = [
     {
-      "company": "DefOpenSource",
-      "title": "Front-End Developer",
+      "company": "Commsult",
+      "title": "Software Developer",
       "years": "10.2019 - present",
       "mainTech": [
-        "Angular 8/9/10"
+        "React"
       ],
       "technologies": [
         "REST API",
-        "RxJS",
+        "Flutter",
         "JavaScript",
         "Bootstrap",
-        "MDBootstrap",
-        "EF Core",
-        ".NET Core",
-        "SignalR",
-        "Angular Material"
+        "Angular Material",
+        "SAPUI5",
+        "Springboot",
+        "Docker"
       ]
     },
     {
-      "company": "Serros Solutions",
-      "title": "Intern",
-      "years": "01.2018 - 09.2019",
+      "company": "10xers Company",
+      "title": "Full-Stack Developer",
+      "years": "02.2022 - 09.2022",
       "mainTech": [
-        "Angular 7/8"
+        "React Native"
       ],
       "technologies": [
-        "RxJS",
-        "Django",
-        "PHP",
-        "JavaScript",
-        "DHTMLX Gantt"
+        "Firebase",
+        "ReactJs",
+        "Redux",
+        "Twilio Segment"
       ]
-    }
+    },
+    {
+      "company": "PT.Pro-Int Dinamika",
+      "title": "Software Developer",
+      "years": "08.2020 - 01.2021",
+      "mainTech": [
+        "C#",
+      ],
+      "technologies": [
+        ".Net",
+        "SQL",
+        "JavaScript",
+      ]
+    },
   ]
 
   const basicInfo = {

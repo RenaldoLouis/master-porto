@@ -30,7 +30,7 @@ const Footer = () => {
                                 DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY
                                 INBOX IS OPEN FOR ALL
                             </p>
-                            <p className="text-white mt-3">"I'm a Full Stack Web Developer | Android App Developer | Open Source Contributor"</p>
+                            <p className="text-white mt-3">"I'm a Full Stack Web Developer | Mobile App Developer"</p>
                             <div className="my-3 icon-shape bg-gradient-white shadow rounded text-info">
                                 <i className="ni ni-pin-3 text-info mr-2" />
                                 "Tangerang, Indonesia"
