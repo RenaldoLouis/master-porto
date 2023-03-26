@@ -64,6 +64,7 @@ function Navigation({
                     className="navbar-toggler"
                     aria-label="navbar_toggle"
                     id="navbar_global"
+                    style={{ display: "flex", alignItems: "center", justifyContent: "flex-end" }}
                 >
                     <span className="navbar-toggler-icon" />
                 </button>
