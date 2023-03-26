@@ -42,7 +42,24 @@ const ProjectsCard = ({ data }) => {
                     </span>
                     <span className="nav-link-inner--text ml-1">Link</span>
                   </Button>
-                ) : null}
+                ) : (
+                  <Button
+                    className="btn-icon"
+                    color="secondary"
+                    href="none"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Twitter"
+                    disabled={true}
+                  >
+                    <span className="btn-inner--icon">
+                      {/* <i className="fa fa-arrow-right mr-2" /> */}
+                    </span>
+                    <span className="nav-link-inner--text ml-1">
+                      Coming Soon
+                    </span>
+                  </Button>
+                )}
               </div>
             </div>
           </CardBody>

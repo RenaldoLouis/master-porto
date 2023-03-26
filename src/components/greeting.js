@@ -5,12 +5,14 @@ import { Button, Container, Row, Col } from "reactstrap";
 
 import GreetingLottie from "./DisplayLottie.js";
 // import SocialLinks from "../components/SocialLinks";
+import Typewriter from "typewriter-effect";
 
 const Greetings = () => {
     useEffect(() => {
         document.documentElement.scrollTop = 0;
         document.scrollingElement.scrollTop = 0;
     });
+
     return (
         <main>
             <div className="position-relative">
@@ -30,10 +32,25 @@ const Greetings = () => {
                         <div className="col px-0">
                             <Row>
                                 <Col lg="6">
-                                    <h1 className="display-3 text-white">
-                                        {greetings.title + " "}
+                                    <h1 className="textStyleInterBold" style={{ color: "white" }}>
+                                        <Typewriter
+                                            options={{
+                                                autoStart: true,
+                                                loop: true,
+                                            }}
+                                            onInit={(typewriter) => {
+
+                                                typewriter
+                                                    .typeString("Welcome")
+                                                    .pauseFor(3000)
+                                                    .deleteAll()
+                                                    .typeString(greetings.title)
+                                                    .pauseFor(3000)
+                                                    .start();
+                                            }}
+                                        />
                                     </h1>
-                                    <p className="lead text-white">
+                                    <p className="textStyleInterNormal text-white">
                                         {greetings.description}
                                     </p>
                                     {/* <SocialLinks /> */}

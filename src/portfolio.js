@@ -2,7 +2,7 @@ import emoji from "react-easy-emoji";
 
 export const greetings = {
 	name: "Fernando Renaldo Louis",
-	title: "Greetings, I'm Fernando Renaldo Louis",
+	title: "I'm Fernando Renaldo Louis",
 	description:
 		"A Full Stack Web Developer and Mobile App Developer having an experience of building Web applications with JavaScript / Reactjs / React / Nodejs  / Golang / Flutter / Springboot and some other cool libraries and frameworks.",
 	resumeLink: "https://drive.google.com/file/d/1sn3Nn93Kdo3loDyuQNH76cGdkNJLZO0s/view?usp=sharing",
@@ -24,18 +24,18 @@ export const socialLinks = {
 export const skillsSection = {
 	title: "What I do",
 	subTitle:
-		"Curious Full Stack Developer Who Wants To Explore Every Tech Stack",
+		"Curious full stack developer who wants to explore every tech stack",
 	data: [
 		{
 			title: "Full Stack Development",
 			lottieAnimationFile: "/lottie/skills/fullstack.json", // Path of Lottie Animation JSON File
 			skills: [
 				emoji(
-					"⚡ Building responsive Single-Page-Apps (SPA) & PWA in React"
+					"Building responsive Single-Page-Apps (SPA) & PWA in React"
 				),
-				emoji("⚡ Building Awesome Mobile Application using Flutter"),
+				emoji("Building Awesome Mobile Application using Flutter"),
 				emoji(
-					"⚡ Building RESTful APIs with Springboot and Docker"
+					"Building RESTful APIs with Springboot and Docker"
 				),
 			],
 			softwareSkills: [
@@ -77,12 +77,12 @@ export const skillsSection = {
 			title: "Cloud Infra-Architecture",
 			lottieAnimationFile: "/lottie/skills/cloudinfra.json", // Path of Lottie Animation JSON File
 			skills: [
-				emoji("⚡ Experience of working on multiple cloud platforms"),
+				emoji("Experience of working on multiple cloud platforms"),
 				emoji(
-					"⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases"
+					"Hosting and maintaining websites on virtual machine instances along with integration of databases"
 				),
 				emoji(
-					"⚡ Building CI/CD pipelines for automated testing & deployment using Github Actions"
+					"Building CI/CD pipelines for automated testing & deployment using Github Actions"
 				),
 			],
 			softwareSkills: [
@@ -177,6 +177,7 @@ export const projects = [
 	{
 		name: "Masareefy",
 		desc: "Apps to help company to track their expenses",
+		link: "https://play.google.com/store/apps/details?id=com.appsqueue.masareef&hl=en&gl=US",
 	},
 	{
 		name: "Alphaverse",
