@@ -4456,6 +4456,9 @@ input[type="button"].btn-block {
 	background-color: transparent;
 	border: 0.0625rem solid transparent;
 	border-radius: 0.25rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 }
 .navbar-toggler:hover,
 .navbar-toggler:focus {

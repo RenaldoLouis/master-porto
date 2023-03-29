@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
 // import { Link } from "react-router-dom";
 
-import { socialLinks } from "../portfolio.js";
+import {socialLinks} from "../portfolio.js";
 // import Headroom from "headroom.js";
 // import Link from "next/link";
 import {
@@ -52,11 +52,11 @@ function Navigation({
             className="navbar-main navbar-transparent navbar-light headroom"
             expand="lg"
             id="navbar-main"
-            style={{ position: "fixed", backgroundColor: scrollValue > 0 ? "#FFB042" : null }}
+            style={{position: "fixed", backgroundColor: scrollValue > 0 ? "#FFB042" : null}}
         >
             <Container>
                 <NavbarBrand href="/" className="mr-lg-5">
-                    <h2 className="text-white copyright" id="nav-title" style={{ fontSize: 15 }}>
+                    <h2 className="text-white copyright" id="nav-title" style={{fontSize: 15}}>
                         Renaldo
                     </h2>
                 </NavbarBrand>
@@ -64,7 +64,6 @@ function Navigation({
                     className="navbar-toggler"
                     aria-label="navbar_toggle"
                     id="navbar_global"
-                    style={{ display: "flex", alignItems: "center", justifyContent: "flex-end" }}
                 >
                     <span className="navbar-toggler-icon" />
                 </button>
